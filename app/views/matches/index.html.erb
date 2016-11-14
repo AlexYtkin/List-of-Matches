@@ -1,0 +1,10 @@
+<div class="row">
+    <% @matches.each do |match| %>
+    <div class="col-md-4">
+    <h2><%= match.title %></h2>
+    <h4><%= match.score %></h4>
+    <h4><%= match.data %></h4>
+    <p><%= link_to "View details", match_path(match), class: 'btn btn-default' %></p>
+    </div>
+    <% end %>
+</div>

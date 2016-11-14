@@ -1,0 +1,13 @@
+<div class="row">
+  <table class="table">
+  <tr>
+    <th>Title</th>
+  </tr>
+  <% @teams.each do |team| %>
+  <tr>
+    <td><%= team.title %><td>
+  </tr>
+  </table>
+  <%= link_to 'Показать данные', team_path(team), class: 'btn btn-primary' %>
+  <% end %>
+</div>

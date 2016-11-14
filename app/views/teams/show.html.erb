@@ -1,0 +1,21 @@
+<div class="row">
+  <h4><%= @team.title %></h4>
+  <table>
+    <th>Имя игрока</th>
+    <th>Количетсво ударов</th>
+    <th>Время в игре</th>
+    <th>Позиция</th>
+    <th>Желтые карточки</th>
+    <th>TTД</th>
+  <% @team.players.each do |player| %>
+  <tr>
+    <td><%= player.name %></td>
+    <td><%= player.numder_kick %></td>
+    <td><%= player.during_game %></td>
+    <td><%= player.position %></td>
+    <td><%= player.yellow_cards %></td>
+    <td><%= player.ttd %></td>
+  </tr>
+  </table>
+  <% end %>
+</div>

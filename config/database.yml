@@ -1,0 +1,7 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: list_of_matches_development
+  pool: 5
+  username: alex
+  password: '123'

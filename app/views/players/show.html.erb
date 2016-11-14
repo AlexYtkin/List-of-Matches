@@ -1,0 +1,12 @@
+<div class="row">
+  <table class="table">
+  <tr>
+    <th>Name</th>
+  </tr>
+  <% @teams.players.each do |player| %>
+  <tr>
+    <td><%= player.name %><td>
+  </tr>
+  </table>
+  <% end %>
+</div>
